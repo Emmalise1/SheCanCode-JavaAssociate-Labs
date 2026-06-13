@@ -33,7 +33,7 @@ public class TestBankingSystem {
             fraud.setFraudFlag(true);
             TransactionProcessor.transfer(fraud, bob, 5000.00, "TXN003");
         } catch (FraudException e) {
-            System.out.println("✓ Caught: " + e.getMessage());
+            System.out.println(" Caught: " + e.getMessage());
             System.out.println("  Error Code: " + e.getErrorCode());
             System.out.println("  Reason: " + e.getFlaggedReason());
             System.out.println("  Transaction ID: " + e.getTransactionId() + "\n");
