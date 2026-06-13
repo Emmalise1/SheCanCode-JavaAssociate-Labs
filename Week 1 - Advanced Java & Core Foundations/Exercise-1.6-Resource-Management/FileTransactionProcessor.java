@@ -12,7 +12,6 @@ public class FileTransactionProcessor {
         int failed = 0;
         List<String> errors = new ArrayList<>();
 
-        // try-with-resources - automatically closes the file!
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
             String line;
             int lineNumber = 0;
@@ -40,7 +39,6 @@ public class FileTransactionProcessor {
             return;
         }
 
-        // Write errors to separate file
         if (!errors.isEmpty()) {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(errorFile))) {
                 writer.write("=== Failed Transactions Report ===\n");
@@ -55,7 +53,6 @@ public class FileTransactionProcessor {
             }
         }
 
-        // Summary report
         System.out.println("\n=== Summary Report ===");
         System.out.println("Processed: " + processed);
         System.out.println("Failed: " + failed);
