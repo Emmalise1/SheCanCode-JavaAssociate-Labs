@@ -21,7 +21,7 @@ public class FileTransactionProcessor {
                 try {
                     processLine(line);
                     processed++;
-                    System.out.println("✓ Processed line " + lineNumber);
+                    System.out.println(" Processed line " + lineNumber);
                 } catch (Exception e) {
                     failed++;
                     String error = String.format("Line %d: %s - %s", lineNumber, e.getMessage(), line);
@@ -47,7 +47,7 @@ public class FileTransactionProcessor {
                     writer.write(error);
                     writer.newLine();
                 }
-                System.out.println("\n✓ Errors written to: " + errorFile);
+                System.out.println("\n Errors written to: " + errorFile);
             } catch (IOException e) {
                 System.out.println("Warning: Could not write error file: " + e.getMessage());
             }
@@ -57,8 +57,6 @@ public class FileTransactionProcessor {
         System.out.println("Processed: " + processed);
         System.out.println("Failed: " + failed);
         System.out.println("Total: " + (processed + failed));
-
-        System.out.println("\n✓ Exercise 1.6 completed successfully!");
     }
 
     private static void processLine(String line) throws Exception {
