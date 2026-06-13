@@ -9,17 +9,14 @@ public class CollectionBenchmark {
             items.add(new BenchmarkItem("SKU" + i, "Item_" + i, 10.0 + i));
         }
 
-        // Testing ArrayList
         long start = System.nanoTime();
         List<BenchmarkItem> arrayList = new ArrayList<>(items);
         long arrayListTime = System.nanoTime() - start;
 
-        // Testing LinkedList
         start = System.nanoTime();
         List<BenchmarkItem> linkedList = new LinkedList<>(items);
         long linkedListTime = System.nanoTime() - start;
 
-        // Testing HashSet
         start = System.nanoTime();
         Set<BenchmarkItem> hashSet = new HashSet<>(items);
         long hashSetTime = System.nanoTime() - start;
