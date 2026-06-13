@@ -25,7 +25,7 @@ public class AccountDatabase {
         } catch (IllegalArgumentException e) {
             throw new DatabaseException(
                     "Failed to retrieve balance for: " + accountId,
-                    "DB_001", e  // ← Exception chaining!
+                    "DB_001", e  
             );
         }
     }
