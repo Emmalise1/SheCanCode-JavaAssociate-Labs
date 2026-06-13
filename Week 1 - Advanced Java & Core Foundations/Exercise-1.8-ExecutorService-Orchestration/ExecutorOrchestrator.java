@@ -39,7 +39,7 @@ public class ExecutorOrchestrator {
             try {
                 MatchTask result = future.get();
                 matched++;
-                if (matched <= 5) { // Show first 5 matches only
+                if (matched <= 5) { 
                     System.out.println("  " + result);
                 }
             } catch (ExecutionException e) {
