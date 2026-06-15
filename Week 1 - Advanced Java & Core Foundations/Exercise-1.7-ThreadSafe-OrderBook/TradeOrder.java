@@ -1,6 +1,10 @@
 public class TradeOrder {
     private String id;
+<<<<<<< HEAD
     private String type;  // "BUY" or "SELL"
+=======
+    private String type;  
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
     private String symbol;
     private int quantity;
     private double price;

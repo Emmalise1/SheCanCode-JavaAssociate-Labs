@@ -39,7 +39,11 @@ public class ExecutorOrchestrator {
             try {
                 MatchTask result = future.get();
                 matched++;
+<<<<<<< HEAD
                 if (matched <= 5) { // Show first 5 matches only
+=======
+                if (matched <= 5) { 
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
                     System.out.println("  " + result);
                 }
             } catch (ExecutionException e) {
@@ -59,4 +63,8 @@ public class ExecutorOrchestrator {
         System.out.println("Throughput: " + (int)(matched / (duration / 1000)) + " matches/sec");
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6

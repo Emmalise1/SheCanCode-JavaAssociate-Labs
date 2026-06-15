@@ -9,17 +9,26 @@ public class CollectionBenchmark {
             items.add(new BenchmarkItem("SKU" + i, "Item_" + i, 10.0 + i));
         }
 
+<<<<<<< HEAD
         // Testing ArrayList
+=======
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
         long start = System.nanoTime();
         List<BenchmarkItem> arrayList = new ArrayList<>(items);
         long arrayListTime = System.nanoTime() - start;
 
+<<<<<<< HEAD
         // Testing LinkedList
+=======
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
         start = System.nanoTime();
         List<BenchmarkItem> linkedList = new LinkedList<>(items);
         long linkedListTime = System.nanoTime() - start;
 
+<<<<<<< HEAD
         // Testing HashSet
+=======
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
         start = System.nanoTime();
         Set<BenchmarkItem> hashSet = new HashSet<>(items);
         long hashSetTime = System.nanoTime() - start;
@@ -30,4 +39,8 @@ public class CollectionBenchmark {
         System.out.println("  HashSet insert: " + hashSetTime + " ns");
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6

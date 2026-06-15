@@ -16,4 +16,8 @@ public class MatchTask {
         return String.format("Matched: %s <-> %s | %d shares @ $%.2f",
                 buyOrderId, sellOrderId, quantity, price);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6

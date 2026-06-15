@@ -11,4 +11,8 @@ public class Electronics extends WarehouseItem {
 
     public String getBrand() { return brand; }
     public int getWarrantyMonths() { return warrantyMonths; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6

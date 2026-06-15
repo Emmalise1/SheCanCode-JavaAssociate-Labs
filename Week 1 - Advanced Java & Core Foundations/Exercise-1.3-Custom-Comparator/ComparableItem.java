@@ -20,4 +20,8 @@ public class ComparableItem {
     public String toString() {
         return name + " [" + category + "] - $" + price;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6

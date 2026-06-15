@@ -12,4 +12,8 @@ public class BenchmarkItem {
     public String getSku() { return sku; }
     public String getName() { return name; }
     public double getPrice() { return price; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
