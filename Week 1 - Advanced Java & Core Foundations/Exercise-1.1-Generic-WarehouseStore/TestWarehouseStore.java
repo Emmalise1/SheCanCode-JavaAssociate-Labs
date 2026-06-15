@@ -9,14 +9,11 @@ public class TestWarehouseStore {
         store.addItem(new Electronics("E003", "Corsair Keyboard", "Electronics", 89.99, "Corsair", 18));
 
         System.out.println("Total items: " + store.size());
-        System.out.println("Electronics category: " + store.findByCategory("Electronics").size());
+        System.out.println("Electronics category: " + store.findByCategory("Electronics"));
 
         store.removeItem("E002");
         System.out.println("After removing mouse: " + store.size() + " items");
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
+
