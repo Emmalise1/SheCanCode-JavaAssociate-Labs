@@ -15,8 +15,4 @@ public class WarehouseItem {
     public String getName() { return name; }
     public String getCategory() { return category; }
     public double getPrice() { return price; }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
