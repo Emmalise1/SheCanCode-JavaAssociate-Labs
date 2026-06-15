@@ -23,8 +23,5 @@ public class BankAccount {
     public String toString() {
         return holderName + ": $" + balance;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
+
