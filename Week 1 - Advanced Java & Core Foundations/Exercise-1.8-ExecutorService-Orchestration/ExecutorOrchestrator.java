@@ -39,32 +39,28 @@ public class ExecutorOrchestrator {
             try {
                 MatchTask result = future.get();
                 matched++;
-<<<<<<< HEAD
+
                 if (matched <= 5) { // Show first 5 matches only
-=======
-                if (matched <= 5) { 
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
-                    System.out.println("  " + result);
+                    if (matched <= 5) {
+
+                        System.out.println("  " + result);
+                    }
+                } catch(ExecutionException e){
+                    System.out.println("Matching failed: " + e.getCause());
                 }
-            } catch (ExecutionException e) {
-                System.out.println("Matching failed: " + e.getCause());
             }
+
+            long endTime = System.nanoTime();
+            double duration = (endTime - startTime) / 1_000_000.0;
+
+            executor.shutdown();
+            executor.awaitTermination(10, TimeUnit.SECONDS);
+
+            System.out.println("\n=== Results ===");
+            System.out.println("Total matches: " + matched);
+            System.out.println("Time taken: " + String.format("%.2f", duration) + " ms");
+            System.out.println("Throughput: " + (int) (matched / (duration / 1000)) + " matches/sec");
+
         }
-
-        long endTime = System.nanoTime();
-        double duration = (endTime - startTime) / 1_000_000.0;
-
-        executor.shutdown();
-        executor.awaitTermination(10, TimeUnit.SECONDS);
-
-        System.out.println("\n=== Results ===");
-        System.out.println("Total matches: " + matched);
-        System.out.println("Time taken: " + String.format("%.2f", duration) + " ms");
-        System.out.println("Throughput: " + (int)(matched / (duration / 1000)) + " matches/sec");
-
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
