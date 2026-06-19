@@ -25,16 +25,3 @@ public class AccountDatabase {
         } catch (IllegalArgumentException e) {
             throw new DatabaseException(
                     "Failed to retrieve balance for: " + accountId,
-<<<<<<< HEAD
-                    "DB_001", e  // ← Exception chaining!
-            );
-        }
-    }
-}
-=======
-                    "DB_001", e  
-            );
-        }
-    }
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
