@@ -37,11 +37,16 @@ public class OrderBookEngine {
         }
     }
 
-    public int getMatchCount() { return matchCount; }
-    public int getBuyCount() { return buyOrders.size(); }
-    public int getSellCount() { return sellOrders.size(); }
-<<<<<<< HEAD
+    public int getMatchCount() {
+        return matchCount;
+    }
+
+    public int getBuyCount() {
+        return buyOrders.size();
+    }
+
+    public int getSellCount() {
+        return sellOrders.size();
+    }
 }
-=======
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
+
