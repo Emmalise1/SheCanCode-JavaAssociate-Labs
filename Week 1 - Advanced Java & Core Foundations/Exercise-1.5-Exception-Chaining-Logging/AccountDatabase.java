@@ -23,5 +23,8 @@ public class AccountDatabase {
 
             return balance;
         } catch (IllegalArgumentException e) {
-            throw new DatabaseException(
-                    "Failed to retrieve balance for: " + accountId,
+            throw new DatabaseException("Failed to retrieve balance for: " + accountId);
+
+        }
+    }
+}
