@@ -15,7 +15,10 @@ public class OrderBookTest {
                     TradeOrder order = new TradeOrder("B" + id + "-" + j, "BUY", "AAPL", 100, 150.0);
                     orderBook.addOrder(order);
                     orderBook.matchOrders();
-                    try { Thread.sleep(10); } catch (InterruptedException e) {}
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                    }
                 }
             }, "Buyer-" + i);
         }
@@ -27,7 +30,10 @@ public class OrderBookTest {
                     TradeOrder order = new TradeOrder("S" + id + "-" + j, "SELL", "AAPL", 100, 149.0);
                     orderBook.addOrder(order);
                     orderBook.matchOrders();
-                    try { Thread.sleep(10); } catch (InterruptedException e) {}
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                    }
                 }
             }, "Seller-" + i);
         }
@@ -45,8 +51,4 @@ public class OrderBookTest {
         System.out.println("Remaining sell orders: " + orderBook.getSellCount());
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1eec90cd047628bbfa03bc0fa14ccbb19fd2a3d6
